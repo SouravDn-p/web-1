@@ -28,16 +28,15 @@ nav li a {
     width: 120px;
   }
 
-  .lmiddiv{
-    padding-left: 30%;
-    font-size: 18px;
-  }
+
   .lmiddiv{
     padding-left: 35%;
     font-size: 18px;
   }
+
 .iconpad{
-  padding-left: 30%;
+  padding-left: 5%;
+  padding-left: 40%;
 }
   
 .navend li{
@@ -368,4 +367,56 @@ h6{
 .rightes{
   padding-left:50%;
   color: #707070;
+}
+
+.toppadicon{
+  font-size: 22px;
+  
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+label span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 0 5px;
+  color: #555;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+label:hover:after {
+  transform: scaleX(1);
+}
+
+input[type="email"] {
+  border: none;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-bottom-color: #007bff;
 }
